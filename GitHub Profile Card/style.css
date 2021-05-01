@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
 /* (*) below means the universal symbol and applying it to everything */
 * {
@@ -6,6 +6,7 @@
 }
 
 body {
+  height: 100vh;
   background: url(images/batman.jpg);
   color: #fff;
   font-family: 'RoboPto', sans-serif;
@@ -13,7 +14,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   overflow: hidden;
   margin: 0;
 }
@@ -100,4 +100,16 @@ body {
   padding: 0.25rem 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-form {
+    max-width: 400px;
+  }
 }
